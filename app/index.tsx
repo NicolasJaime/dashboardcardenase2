@@ -1,5 +1,6 @@
 import { Text, View } from "react-native";
 import "../global.css"
+import "ProfileDetails"
 export default function Index() {
   return (
     <View
@@ -10,8 +11,8 @@ export default function Index() {
     }}
     >
       <Text>Edit app/index.tsx to edit this screen.</Text>
-        <View className="flex justify-center items-center bg-stone-800 w-screen h-screen">
-          <Text className="text-white bold text-xl">Edit app/index.tsx to edit this screen.</Text>
+        <View className="flex justify-center items-center white w-screen h-screen">
+        <ProfileDetails></ProfileDetails>
         </View>
     </View>
   );
