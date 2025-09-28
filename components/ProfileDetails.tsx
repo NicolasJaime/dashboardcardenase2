@@ -3,6 +3,7 @@ import React from 'react'
 import { Image, Text, View } from 'react-native'
 import IconButton from "./IconButton"
 import CustomText from "./ui/CustomText"
+import { Linking } from "react-native" 
 
 const ProfileDetails = () => {
   return (
@@ -14,10 +15,10 @@ const ProfileDetails = () => {
     <CustomText value="Estudiante" variant="title"></CustomText>
     <CustomText value="Jaime Cárdenas" variant="subtitle2"></CustomText>
       <View className="flex-row justify-center mt-6 gap-6">
-        <IconButton icon="logo-instagram" pulsar={() => console.log("Instagram")} color="#FF69B480"></IconButton>
-        <IconButton icon="logo-whatsapp" pulsar={() => console.log("Whatsapp")} color="lightgreen"></IconButton>
-        <IconButton icon="logo-facebook" pulsar={() => console.log("Facebook")} color="blue"></IconButton>
-        <IconButton icon="logo-linkedin" pulsar={() => console.log("Linkedin")} color="lightblue"></IconButton>
+        <IconButton icon="logo-instagram" pulsar={() => Linking.openURL("https://www.instagram.com/_jaime.cardenas_/")} color="#FF69B480"></IconButton>
+        <IconButton icon="logo-whatsapp" pulsar={() => Linking.openURL("https://web.whatsapp.com/")} color="lightgreen"></IconButton>
+        <IconButton icon="logo-facebook" pulsar={() => Linking.openURL("https://www.facebook.com/")} color="blue"></IconButton>
+        <IconButton icon="logo-linkedin" pulsar={() => Linking.openURL("https://www.linkedin.com/")} color="lightblue"></IconButton>
       </View>
 
     </View>
