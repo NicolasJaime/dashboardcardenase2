@@ -7,7 +7,6 @@ interface IconButtonProps {
   icon: string; //Cadena
   enlace?:string;//Cadena opcional
   color:string;
-  
 }
 
 const IconButton = ({icon, pulsar, enlace, color}: IconButtonProps) => {
