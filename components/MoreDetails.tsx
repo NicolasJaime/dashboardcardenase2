@@ -13,8 +13,18 @@ const MoreDetails = () => {
         <IconButton icon="basketball-ball" pulsar={() => console.log("Basquet")} color="orange"></IconButton>
         <IconButton icon="compass" pulsar={() => console.log("Direccion")} color="black"></IconButton>
       </View>
-      <CustomText value="Profesión" variant="subtitle"></CustomText>
+      <View className='flex flex-col gap-1'>
+        <CustomText value="Profesión" variant="subtitle" />
+        <CustomText value="Estudiante" variant="text" />
+      </View>
+      <View className='flex flex-col gap-1'>
+        <CustomText value="Experiencia" variant="subtitle"></CustomText>
+        <View className='h-10 w-full bg-[#0f546d] rounded-full p-1 flex flex-col justify-start gap-4 '>
+          <CustomText value="Ninguna" variant="text"></CustomText>
+        </View>
+      </View>
     </View>
+    
   )
 }
 
