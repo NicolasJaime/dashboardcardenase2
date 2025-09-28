@@ -9,7 +9,7 @@ const ProfileDetails = () => {
   return (
     <View className="flex justify-center items-center h-1/2 w-screen bg-[#f5f5dc]">
       <Image
-        source={require('../assets/images/icon.png')}
+        source={require('../assets/images/dinosaurio.png.jpg')}
         className="max-h-36 max-w-36 rounded-full"
       />
     <CustomText value="Estudiante" variant="title"></CustomText>
